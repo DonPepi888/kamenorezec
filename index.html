@@ -101,33 +101,32 @@
     </div>
 </section>
 
-<section id="kontakt" class="section kontakt">
+<section id="kontakt" class="section">
     <div class="container">
-        <h2>Контакт</h2>
+        <h2>КОНТАКТ</h2>
         <div class="kontakt-content">
             <div class="kontakt-info">
                 <p><i class="fas fa-map-marker-alt"></i> <strong>Адреса:</strong> Улица "Камена" бр. 10, Гостивар</p>
-                <p><i class="fas fa-phone-alt"></i> <strong>Телефон:</strong> 078 - 832 - 211 | 071 - 347 - 868 | 075 - 226 - 200</p>
+                <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> 078 - 832 - 211 | 071 - 347 - 868 | 075 - 226 - 200</p>
                 <p><i class="fas fa-envelope"></i> <strong>Е-пошта:</strong> kamenorezecmilisav2010@gmail.com</p>
 
                 <div class="social-links-container">
-                    <a href="https://www.facebook.com/p/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D1%80%D0%B5%D0%B7%D0%B5%D1%86-%D0%9C%D0%B8%D0%BB%D0%B8%D1%81%D0%B0%D0%B2-100063968506387/" target="_blank" class="social-link facebook-link">
+                    <a href="https://www.facebook.com/p/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D1%80%D0%B5%D0%B7%D0%B5%D1%86-%D0%9C%D0%B8%D0%BB%D0%B8%D1%81%D0%B0%D0%B2-100063968506387/" target="_blank" class="social-link" aria-label="Facebook">
                         <i class="fab fa-facebook facebook-icon"></i>
-
                     </a>
-
-                    <a href="https://www.instagram.com/stonekmgroup/" target="_blank" class="social-link instagram-link">
+                    <a href="https://www.instagram.com/stonekmgroup/" target="_blank" class="social-link" aria-label="Instagram">
                         <i class="fab fa-instagram instagram-icon"></i>
-
                     </a>
                 </div>
             </div>
+
             <div class="kontakt-forma">
-                <form>
-                    <input type="text" placeholder="Вашето име" required>
-                    <input type="email" placeholder="Вашата е-пошта" required>
-                    <textarea placeholder="Вашата порака" rows="5" required></textarea>
-                    <button type="submit" class="btn">Испрати</button>
+                <form action="https://formspree.io/f/xvkpadvw" method="POST">
+                    <input type="text" name="name" placeholder="Вашето име" required>
+                    <input type="email" name="email" placeholder="Вашата е-пошта" required>
+                    <textarea name="message" placeholder="Вашата порака" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">ИСПРАТИ</button>
                 </form>
             </div>
         </div>
