@@ -125,7 +125,7 @@ header nav ul li a:hover {
 /* Hero секција */
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/9.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/9.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
