@@ -121,6 +121,25 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #a67c52;
 }
+/* Стилизирање на Лого во Хедер */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.site-logo {
+    height: 45px; /* Висина на логото */
+    width: auto;
+    object-fit: contain;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
 
 /* Hero секција */
 .hero {
