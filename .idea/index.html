@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каменорезец Милисав</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Стил за икони (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Претходно вчитани фонтови -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Твојот стил -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<!-- Cookies Banner -->
-<div id="cookie-banner" class="cookie-banner">
-    <p>Оваа веб-страница користи колачиња (cookies) за да ви овозможи најдобро корисничко искуство. <a href="#">Дознај повеќе</a>.</p>
-    <button id="accept-cookies" class="btn cookie-btn">Прифати</button>
-</div>
 <body>
 
+<!-- Cookies Banner -->
+<div id="cookie-banner" class="cookie-banner">
+    <div class="container cookie-content">
+        <p>Оваа веб-страница користи колачиња (cookies) за да ви овозможи најдобро корисничко искуство. <a href="#">Дознај повеќе</a>.</p>
+        <button id="accept-cookies" class="btn cookie-btn">Прифати</button>
+    </div>
+</div>
 
 <header>
     <div class="container">
@@ -35,8 +44,8 @@
 <section id="pocetna" class="hero">
     <div class="container hero-content">
         <h2>Традиција и квалитет во изработката на камен</h2>
-        <p>Над 30 години искуство во изработка на споменици, надгробни плочи, камини и уникатни камени елементи за вашиот дом и деловен простор.</p>
-        <a href="#kontakt" class="btn">Контактирајте нè</a>
+        <p>Над 30 години искуство.</p>
+        <a href="#kontakt" class="btn btn-hero">Контактирајте нè</a>
     </div>
 </section>
 
@@ -52,22 +61,22 @@
         <h2>Нашите Услуги</h2>
         <div class="usulgi-grid">
             <div class="usluga-item">
-                <img src="https://via.placeholder.com/150x150?text=Споменици" alt="Споменици">
+                <img src="../images/1.jpg" alt="Споменици">
                 <h3>Споменици</h3>
                 <p>Изработка на споменици и надгробни плочи по мерка и со уникатен дизајн.</p>
             </div>
             <div class="usluga-item">
-                <img src="https://via.placeholder.com/150x150?text=Архитектонски Елементи" alt="Архитектонски Елементи">
+                <img src="../images/8.jpg" alt="Архитектонски Елементи">
                 <h3>Архитектонски Елементи</h3>
                 <p>Камени скали, фасадни облоги, столбови и други архитектонски елементи.</p>
             </div>
             <div class="usluga-item">
-                <img src="https://via.placeholder.com/150x150?text=Ентериер" alt="Ентериер">
+                <img src="../images/2.jpg" alt="Ентериер">
                 <h3>Ентериер</h3>
                 <p>Камини, плочи за кујни, бањи и други камени елементи за внатрешно уредување.</p>
             </div>
             <div class="usluga-item">
-                <img src="https://via.placeholder.com/150x150?text=Декорација" alt="Декорација">
+                <img src="../images/3.jpg" alt="Декорација">
                 <h3>Декорација</h3>
                 <p>Камени вазни, скулптури и други украсни елементи од камен.</p>
             </div>
@@ -79,12 +88,12 @@
     <div class="container">
         <h2>Галерија</h2>
         <div class="galerija-grid">
-            <img src="https://via.placeholder.com/300x200?text=Слика 1" alt="Слика 1">
-            <img src="https://via.placeholder.com/300x200?text=Слика 2" alt="Слика 2">
+            <img src="../images/1.jpg" alt="Слика 1">
+            <img src="../images/2.jpg" alt="Слика 2">
             <img src="https://via.placeholder.com/300x200?text=Слика 3" alt="Слика 3">
             <img src="https://via.placeholder.com/300x200?text=Слика 4" alt="Слика 4">
             <img src="https://via.placeholder.com/300x200?text=Слика 5" alt="Слика 5">
-            <img src="https://via.placeholder.com/300x200?text=Слика 6" alt="Слика 6">
+            <img src="../images/1.jpg" alt="Слика 6">
         </div>
     </div>
 </section>
@@ -94,9 +103,21 @@
         <h2>Контакт</h2>
         <div class="kontakt-content">
             <div class="kontakt-info">
-                <p><strong>Адреса:</strong> Улица "Камена" бр. 10, Гостивар</p>
-                <p><strong>Телефон:</strong> +389 (0) 7X XXX XXX</p>
-                <p><strong>Е-пошта:</strong> info@kamenorezec.me</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Адреса:</strong> Улица "Камена" бр. 10, Гостивар</p>
+                <p><i class="fas fa-phone-alt"></i> <strong>Телефон:</strong> 078 - 832 - 211 | 071 - 347 - 868 | 075 - 226 - 200</p>
+                <p><i class="fas fa-envelope"></i> <strong>Е-пошта:</strong> kamenorezecmilisav2010@gmail.com</p>
+
+                <div class="social-links-container">
+                    <a href="https://www.facebook.com/p/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D1%80%D0%B5%D0%B7%D0%B5%D1%86-%D0%9C%D0%B8%D0%BB%D0%B8%D1%81%D0%B0%D0%B2-100063968506387/" target="_blank" class="social-link facebook-link">
+                        <i class="fab fa-facebook facebook-icon"></i>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/stonekmgroup/" target="_blank" class="social-link instagram-link">
+                        <i class="fab fa-instagram instagram-icon"></i>
+
+                    </a>
+                </div>
             </div>
             <div class="kontakt-forma">
                 <form>
@@ -116,7 +137,6 @@
     </div>
 </footer>
 
-
-</body>
 <script src="script.js"></script>
+</body>
 </html>
