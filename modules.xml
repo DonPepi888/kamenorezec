@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/kamenorezec.iml" filepath="$PROJECT_DIR$/.idea/kamenorezec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kamenorezec.iml" filepath="$PROJECT_DIR$/kamenorezec.iml" />
     </modules>
   </component>
 </project>
