@@ -121,6 +121,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #a67c52;
 }
+
 /* Стилизирање на Лого во Хедер */
 .logo-container {
     display: flex;
