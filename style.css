@@ -1,6 +1,7 @@
 /* Основни стилови */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 
 .container {
@@ -71,7 +73,7 @@ img {
     justify-content: center;
     gap: 10px;
     padding: 12px 28px;
-    background-color: #a67c52; /* Кафеава боја на камен */
+    background-color: #a67c52;
     color: #fff;
     border-radius: 30px;
     border: none;
@@ -219,7 +221,7 @@ header nav ul li a:hover {
 }
 
 /* Услуги */
-.usulgi-grid {
+.uslugi-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
@@ -498,6 +500,7 @@ footer p {
         left: 0;
         background-color: #fff;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        box-sizing: border-box;
     }
 
     nav.active {
@@ -524,6 +527,82 @@ footer p {
 
     .kontakt-info, .kontakt-forma {
         width: 100%;
+    }
+
+    .cookie-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+/* Прилагодливост (Responsive) за мобилни уреди */
+@media (max-width: 850px) {
+    .container {
+        width: 90%;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .kontakt-content {
+        flex-direction: column;
+    }
+
+    .kontakt-info, .kontakt-forma {
+        width: 100%;
+    }
+
+    /* --- Намалување и центрирање на инпутите на мобилен --- */
+    .kontakt-forma {
+        padding: 20px 15px; /* Малку помал падинг во картичката */
+    }
+
+    .kontakt-forma form {
+        align-items: center; /* Го центрира копчето и инпутите */
+    }
+
+    .kontakt-forma input,
+    .kontakt-forma select,
+    .kontakt-forma textarea {
+        width: 92%; /* Ја намалуваме ширината од 100% на 92% за да има простор од страните */
+        max-width: 400px; /* Опционално ограничување за поголеми телефони/таблети */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-submit {
+        width: 92%;
+        max-width: 400px;
     }
 
     .cookie-content {

@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Твојот стил -->
+    <!-- Стил -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -78,10 +78,10 @@
     </div>
 </section>
 
-<section id="uslugi" class="section usulgi">
+<section id="uslugi" class="section uslugi">
     <div class="container">
         <h2>Нашите Услуги</h2>
-        <div class="usulgi-grid">
+        <div class="uslugi-grid">
             <div class="usluga-item">
                 <img src="images/1.jpg" alt="Изработка на споменици од камен">
                 <h3>Споменици и Надгробни Плочи</h3>
@@ -121,7 +121,7 @@
     </div>
 </section>
 
-<!-- Секција за доверба (Рецензии) -->
+<!-- Секција за рецензии -->
 <section id="recenzii" class="section recenzii-section">
     <div class="container">
         <h2>Што велат нашите клиенти</h2>
@@ -153,8 +153,8 @@
                 <p><i class="fas fa-map-marker-alt"></i> <strong>Адреса:</strong> Улица "Камена" бр. 10, Гостивар</p>
                 <p>
                     <i class="fas fa-phone"></i> <strong>Телефони:</strong><br>
-                    <a href="tel:078832211" class="phone-link">078 - 832 - 211</a> |
-                    <a href="tel:071347868" class="phone-link">071 - 347 - 868</a> |
+                    <a href="tel:078832211" class="phone-link">078 - 832 - 211</a>  <br>
+                    <a href="tel:071347868" class="phone-link">071 - 347 - 868</a>  <br>
                     <a href="tel:075226200" class="phone-link">075 - 226 - 200</a>
                 </p>
                 <p><i class="fas fa-envelope"></i> <strong>Е-пошта:</strong> <a href="mailto:kamenorezecmilisav2010@gmail.com">kamenorezecmilisav2010@gmail.com</a></p>
@@ -174,10 +174,7 @@
                 <form action="https://formspree.io/f/xvkpadvw" method="POST">
                     <input type="text" name="name" placeholder="Вашето име и презиме" required>
                     <input type="tel" name="phone" placeholder="Вашиот телефонски број" required>
-
-
                     <textarea name="message" placeholder="Опишете го вашето барање или замисла..." rows="5" required></textarea>
-
                     <button type="submit" class="btn btn-submit">ИСПРАТИ БАРАЊЕ</button>
                 </form>
             </div>
@@ -191,15 +188,6 @@
     </div>
 </footer>
 
-<!-- Скрипта за мобилно мени -->
-<script>
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-</script>
 <script src="script.js"></script>
 </body>
 </html>
