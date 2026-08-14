@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каменорезец Милисав</title>
+    <title>Каменорезец Милисав | Изработка на споменици и камен во Гостивар</title>
+    <meta name="description" content="Каменорезец Милисав - Над 30 години традиција во изработка на споменици, надгробни плочи, камени скали, фасадни облоги и камини во Гостивар и цела Македонија.">
     <link rel="icon" type="image/png" href="images/logo.png">
 
-    <!-- Стил за икони (Font Awesome) -->
+    <!-- Font Awesome за икони -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Претходно вчитани фонтови -->
@@ -27,18 +28,32 @@
     </div>
 </div>
 
+<!-- Лебдечко копче за Viber / Контакт -->
+<div class="floating-viber">
+    <a href="viber://chat?number=%2B38978832211" target="_blank" aria-label="Пишете ни на Viber">
+        <i class="fab fa-viber"></i>
+    </a>
+</div>
+
 <header>
-    <div class="container">
+    <div class="container header-container">
         <a href="#pocetna" class="logo-container">
             <img src="images/logo.png" alt="Каменорезец Милисав Лого" class="site-logo">
             <h1>Каменорезец Милисав</h1>
         </a>
-        <nav>
+
+        <!-- Хамбургер копче за мобилен -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Отвори мени">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#pocetna">Почетна</a></li>
                 <li><a href="#za-nas">За нас</a></li>
                 <li><a href="#uslugi">Услуги</a></li>
                 <li><a href="#galerija">Галерија</a></li>
+                <li><a href="#recenzii">Рецензии</a></li>
                 <li><a href="#kontakt">Контакт</a></li>
             </ul>
         </nav>
@@ -48,15 +63,18 @@
 <section id="pocetna" class="hero">
     <div class="container hero-content">
         <h2>Традиција и квалитет во изработката на камен</h2>
-        <p>Над 30 години искуство.</p>
-        <a href="#kontakt" class="btn btn-hero">Контактирајте нè</a>
+        <p>Над 30 години искуство во изработка на споменици, ентериери и камени елементи.</p>
+        <div class="hero-buttons">
+            <a href="tel:078832211" class="btn btn-hero btn-call"><i class="fas fa-phone"></i> Јавете се веднаш</a>
+            <a href="#kontakt" class="btn btn-hero btn-secondary">Побарајте понуда</a>
+        </div>
     </div>
 </section>
 
 <section id="za-nas" class="section">
     <div class="container">
         <h2>За нас</h2>
-        <p>Каменорезец Милисав е семејна работилница со долгогодишна традиција во обработка на сите видови камен. Се гордееме со нашата посветеност на деталите, квалитетот на материјалите што ги користиме и вештината да ги претвориме идеите на нашите клиенти во трајни камени дела. Нашата цел е да обезбедиме производи кои ќе траат со генерации.</p>
+        <p><strong>Каменорезец Милисав</strong> е семејна работилница со долгогодишна традиција во обработка на сите видови камен во Гостивар и цела Македонија. Се гордееме со нашата посветеност на деталите, квалитетот на природните материјали што ги користиме и вештината да ги претвориме идеите на нашите клиенти во трајни камени дела. Нашата цел е да обезбедиме производи кои ќе траат со генерации.</p>
     </div>
 </section>
 
@@ -65,24 +83,24 @@
         <h2>Нашите Услуги</h2>
         <div class="usulgi-grid">
             <div class="usluga-item">
-                <img src="images/1.jpg" alt="Споменици">
-                <h3>Споменици</h3>
-                <p>Изработка на споменици и надгробни плочи по мерка и со уникатен дизајн.</p>
+                <img src="images/1.jpg" alt="Изработка на споменици од камен">
+                <h3>Споменици и Надгробни Плочи</h3>
+                <p>Изработка и монтажа на надгробни споменици по мерка, со уникатен дизајн и гравирање.</p>
             </div>
             <div class="usluga-item">
-                <img src="images/8.jpg" alt="Архитектонски Елементи">
+                <img src="images/8.jpg" alt="Архитектонски елементи од камен">
                 <h3>Архитектонски Елементи</h3>
-                <p>Камени скали, фасадни облоги, столбови и други архитектонски елементи.</p>
+                <p>Камени скали, фасадни облоги, столбови, оквири околу прозорци и надворешно уредување.</p>
             </div>
             <div class="usluga-item">
-                <img src="images/2.jpg" alt="Ентериер">
-                <h3>Ентериер</h3>
-                <p>Камини, плочи за кујни, бањи и други камени елементи за внатрешно уредување.</p>
+                <img src="images/2.jpg" alt="Камени кујнски плочи и камини">
+                <h3>Ентериер од Гранит и Мермер</h3>
+                <p>Камини, плочи за кујни и бањи, како и други прецизни камени елементи за внатрешен простор.</p>
             </div>
             <div class="usluga-item">
-                <img src="images/3.jpg" alt="Декорација">
-                <h3>Декорација</h3>
-                <p>Камени вазни, скулптури и други украсни елементи од камен.</p>
+                <img src="images/3.jpg" alt="Камена декорација">
+                <h3>Декорација и Уметнички Дела</h3>
+                <p>Камени вазни, скулптури, чешми и украсни елементи рачно обработени од камен.</p>
             </div>
         </div>
     </div>
@@ -90,26 +108,56 @@
 
 <section id="galerija" class="section galerija">
     <div class="container">
-        <h2>Галерија</h2>
+        <h2>Галерија од Изработени Проекти</h2>
+        <p class="section-desc">Дел од нашите најнови изработки од гранит, мермер и природен камен.</p>
         <div class="galerija-grid">
-            <img src="images/1.jpg" alt="Слика 1">
-            <img src="images/2.jpg" alt="Слика 2">
-            <img src="https://via.placeholder.com/300x200?text=Слика 3" alt="Слика 3">
-            <img src="https://via.placeholder.com/300x200?text=Слика 4" alt="Слика 4">
-            <img src="https://via.placeholder.com/300x200?text=Слика 5" alt="Слика 5">
-            <img src="images/1.jpg" alt="Слика 6">
+            <img src="images/1.jpg" alt="Изработен споменик 1">
+            <img src="images/2.jpg" alt="Камен за ентериер 2">
+            <img src="images/3.jpg" alt="Камена декорација 3">
+            <img src="images/8.jpg" alt="Архитектонски камен 4">
+            <img src="images/9.jpg" alt="Изработен проект 5">
+            <img src="images/1.jpg" alt="Изработен споменик 6">
+        </div>
+    </div>
+</section>
+
+<!-- Секција за доверба (Рецензии) -->
+<section id="recenzii" class="section recenzii-section">
+    <div class="container">
+        <h2>Што велат нашите клиенти</h2>
+        <div class="recenzii-grid">
+            <div class="recenzija-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>„Исклучителна професионалност и прецизност. Споменикот беше завршен точно навреме и со максимален квалитет. Топла препорака за Милисав!“</p>
+                <h4>- Горан П.</h4>
+            </div>
+            <div class="recenzija-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>„Ни ги изработија камените скали и плочата за кујната. Изгледа подобро од што замислувавме, материјалот е врвен.“</p>
+                <h4>- Елена М.</h4>
+            </div>
+            <div class="recenzija-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>„Брз договор, фер цена и одлична комуникација. Секоја чест за долгогодишната традиција.“</p>
+                <h4>- Александар Т.</h4>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="kontakt" class="section">
     <div class="container">
-        <h2>КОНТАКТ</h2>
+        <h2>КОНТАКТИРАЈТЕ НЀ</h2>
         <div class="kontakt-content">
             <div class="kontakt-info">
                 <p><i class="fas fa-map-marker-alt"></i> <strong>Адреса:</strong> Улица "Камена" бр. 10, Гостивар</p>
-                <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> 078 - 832 - 211 | 071 - 347 - 868 | 075 - 226 - 200</p>
-                <p><i class="fas fa-envelope"></i> <strong>Е-пошта:</strong> kamenorezecmilisav2010@gmail.com</p>
+                <p>
+                    <i class="fas fa-phone"></i> <strong>Телефони:</strong><br>
+                    <a href="tel:078832211" class="phone-link">078 - 832 - 211</a> |
+                    <a href="tel:071347868" class="phone-link">071 - 347 - 868</a> |
+                    <a href="tel:075226200" class="phone-link">075 - 226 - 200</a>
+                </p>
+                <p><i class="fas fa-envelope"></i> <strong>Е-пошта:</strong> <a href="mailto:kamenorezecmilisav2010@gmail.com">kamenorezecmilisav2010@gmail.com</a></p>
 
                 <div class="social-links-container">
                     <a href="https://www.facebook.com/p/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D1%80%D0%B5%D0%B7%D0%B5%D1%86-%D0%9C%D0%B8%D0%BB%D0%B8%D1%81%D0%B0%D0%B2-100063968506387/" target="_blank" class="social-link" aria-label="Facebook">
@@ -122,12 +170,15 @@
             </div>
 
             <div class="kontakt-forma">
+                <h3>Испратете директно запитување</h3>
                 <form action="https://formspree.io/f/xvkpadvw" method="POST">
-                    <input type="text" name="name" placeholder="Вашето име" required>
-                    <input type="email" name="email" placeholder="Вашата е-пошта" required>
-                    <textarea name="message" placeholder="Вашата порака" rows="5" required></textarea>
+                    <input type="text" name="name" placeholder="Вашето име и презиме" required>
+                    <input type="tel" name="phone" placeholder="Вашиот телефонски број" required>
 
-                    <button type="submit" class="btn">ИСПРАТИ</button>
+
+                    <textarea name="message" placeholder="Опишете го вашето барање или замисла..." rows="5" required></textarea>
+
+                    <button type="submit" class="btn btn-submit">ИСПРАТИ БАРАЊЕ</button>
                 </form>
             </div>
         </div>
@@ -136,10 +187,19 @@
 
 <footer>
     <div class="container">
-        <p>&copy; 2026 Каменорезец Милисав. Сите права се задржани.</p>
+        <p>&copy; 2026 Каменорезец Милисав - Гостивар. Сите права се задржани.</p>
     </div>
 </footer>
 
+<!-- Скрипта за мобилно мени -->
+<script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
 <script src="script.js"></script>
 </body>
 </html>

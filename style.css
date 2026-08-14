@@ -1,4 +1,8 @@
 /* Основни стилови */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,12 +12,12 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #222;
@@ -29,14 +33,19 @@ h2 {
 
 p {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 16px;
     color: #555;
 }
 
+.section-desc {
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
 a {
     text-decoration: none;
-    color: #333;
+    color: inherit;
 }
 
 ul {
@@ -57,7 +66,10 @@ img {
 
 /* Копчиња */
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 12px 28px;
     background-color: #a67c52; /* Кафеава боја на камен */
     color: #fff;
@@ -87,18 +99,30 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
-header .container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.site-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
 header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 22px;
     color: #333;
 }
 
@@ -107,7 +131,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 header nav ul li a {
@@ -122,30 +146,20 @@ header nav ul li a:hover {
     color: #a67c52;
 }
 
-/* Стилизирање на Лого во Хедер */
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-decoration: none;
-}
-
-.site-logo {
-    height: 45px; /* Висина на логото */
-    width: auto;
-    object-fit: contain;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 22px;
+/* Мобилно мени копче */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
     color: #333;
+    cursor: pointer;
 }
 
 /* Hero секција */
 .hero {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/9.jpg');
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('images/9.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -153,15 +167,15 @@ header h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 80px;
 }
 
 .hero-content {
     max-width: 800px;
-    margin-top: 60px;
 }
 
 .hero-content h2 {
-    font-size: 48px;
+    font-size: 44px;
     text-transform: uppercase;
     color: #fff;
     border: none;
@@ -170,26 +184,51 @@ header h1 {
 
 .hero-content p {
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn-hero {
-    font-size: 18px;
-    padding: 15px 35px;
+    font-size: 16px;
+    padding: 15px 30px;
+}
+
+.btn-call {
+    background-color: #27ae60;
+}
+
+.btn-call:hover {
+    background-color: #219150;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+    color: #333;
 }
 
 /* Услуги */
 .usulgi-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
     margin-top: 40px;
 }
 
 .usluga-item {
     background-color: #fff;
-    padding: 40px;
+    padding: 30px 20px;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -202,22 +241,23 @@ header h1 {
 }
 
 .usluga-item img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .usluga-item h3 {
     margin-bottom: 15px;
-    color: #333;
+    font-size: 20px;
+    color: #222;
 }
 
 /* Галерија */
 .galerija-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -227,6 +267,46 @@ header h1 {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.galerija-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* Рецензии */
+.recenzii-section {
+    background-color: #eae6e1;
+}
+
+.recenzii-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.recenzija-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.recenzija-card .stars {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recenzija-card p {
+    font-style: italic;
+    color: #444;
+}
+
+.recenzija-card h4 {
+    margin: 0;
+    color: #a67c52;
+    text-align: right;
 }
 
 /* Контакт */
@@ -235,25 +315,39 @@ header h1 {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 40px;
+    gap: 40px;
 }
 
 .kontakt-info {
-    width: 40%;
+    width: 45%;
 }
 
 .kontakt-info p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    font-size: 17px;
+    margin-bottom: 25px;
 }
 
-.kontakt-info strong {
-    color: #333;
+.phone-link {
+    color: #a67c52;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.phone-link:hover {
+    color: #27ae60;
+    text-decoration: underline;
 }
 
 .kontakt-forma {
     width: 50%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.kontakt-forma h3 {
+    margin-bottom: 20px;
 }
 
 .kontakt-forma form {
@@ -262,45 +356,47 @@ header h1 {
 }
 
 .kontakt-forma input,
+.kontakt-forma select,
 .kontakt-forma textarea {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 15px;
     transition: border-color 0.3s;
 }
 
 .kontakt-forma input:focus,
+.kontakt-forma select:focus,
 .kontakt-forma textarea:focus {
     outline: none;
     border-color: #a67c52;
 }
 
-/* Стилизирање за само икони на социјални мрежи */
+.btn-submit {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Социјални Мрежи */
 .social-links-container {
     margin-top: 25px;
-    padding-top: 15px;
-    border-top: 1px solid #eee;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
 .social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .social-link:hover {
     transform: translateY(-3px);
-    opacity: 0.85;
 }
 
 .facebook-icon {
@@ -313,13 +409,39 @@ header h1 {
     font-size: 36px;
 }
 
+/* Viber Лебдечко Копче */
+.floating-viber {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+}
+
+.floating-viber a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #7360f2;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.floating-viber a:hover {
+    transform: scale(1.1);
+}
+
 /* Футер */
 footer {
     background-color: #222;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
-    margin-top: 80px;
+    padding: 25px 0;
+    margin-top: 60px;
 }
 
 footer p {
@@ -328,54 +450,7 @@ footer p {
     font-size: 14px;
 }
 
-/* Прилагодливост */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    .section {
-        padding: 60px 0;
-    }
-
-    header {
-        position: relative;
-    }
-
-    header .container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    header nav ul li {
-        margin: 0 10px;
-    }
-
-    .hero {
-        height: auto;
-        padding: 100px 0;
-    }
-
-    .hero-content h2 {
-        font-size: 32px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-
-    .kontakt-content {
-        flex-direction: column;
-    }
-
-    .kontakt-info,
-    .kontakt-forma {
-        width: 100%;
-        margin-bottom: 40px;
-    }
-}
-
-/* Cookie Banner Style */
+/* Cookie Banner */
 .cookie-banner {
     position: fixed;
     bottom: 0;
@@ -384,7 +459,6 @@ footer p {
     background-color: #111;
     color: #fff;
     box-sizing: border-box;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
     z-index: 9999;
 }
 
@@ -392,32 +466,69 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .cookie-banner p {
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
     color: #ccc;
 }
 
-.cookie-banner a {
-    color: #a67c52;
-    text-decoration: underline;
-}
-
-.cookie-banner a:hover {
-    color: #8c6543;
-}
-
 .cookie-btn {
-    padding: 8px 20px;
-    font-size: 14px;
-    margin-left: 15px;
-    border-radius: 20px;
-    background-color: #a67c52;
+    padding: 6px 16px;
+    font-size: 13px;
 }
 
-.cookie-btn:hover {
-    background-color: #8c6543;
+/* Прилагодливост (Responsive) */
+@media (max-width: 850px) {
+    .container {
+        width: 90%;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .kontakt-content {
+        flex-direction: column;
+    }
+
+    .kontakt-info, .kontakt-forma {
+        width: 100%;
+    }
+
+    .cookie-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 }
